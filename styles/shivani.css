@@ -1,0 +1,105 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 18px;
+    /* background-color: #f2f2f2; */
+}
+h1{
+    color: #1ebe6ecd;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 20px;
+}
+.description{
+    height: 120px;
+}
+#sub{
+    line-height: 2rem;
+}
+#headshot{
+    width: 250px;
+    height: auto;
+}
+section{
+    margin-top: 4rem;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item{
+    margin: 1rem;
+    padding: 0.25rem;
+    max-width: 400px;
+}
+.img-container {
+    position: relative;
+}
+img{
+    width: 400px;
+    height: auto;
+    box-shadow: 7px 7px 5px grey;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7f7f7f;
+}
+.img-container:hover .overlay {
+    opacity: 0.9;
+} 
+.text {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.pic{
+    border: 1px solid grey;
+}
+.webpage{
+    border-radius: 5px;
+}
+footer{
+    margin-top: 4rem;
+    text-align: center;
+}
+a:link{
+    color: #804FB3;
+}
+a:visited{
+    color: #3c2268;
+}
+a:hover{
+    color: #2dbb8a;
+}
+@media (max-width: 650px) {
+    .item{
+        max-width: 300px;
+    }
+    img{
+        width: 300px;
+    }
+}
